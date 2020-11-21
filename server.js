@@ -8,9 +8,6 @@ var cors = require('cors')
 var fs = require('fs'); //파일 읽기, 쓰기 등을 할 수 있는 모듈
 
 var app = express();
-var server = app.listen(3000, function () {
-    console.log("Express server has started on port 3000")
-})
 app.engine('html', require('ejs').renderFile);
 
 app.set('view engine', 'ejs');
